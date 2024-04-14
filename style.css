@@ -1,0 +1,139 @@
+body{
+    background-image: url(assets/food-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tab{
+    width:35%;
+    height:fit-content;
+    background-color:white;
+    
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.search-container{
+    display:flex;
+    flex-direction: row;
+    align-items:end;
+    margin-bottom: 20px;
+}
+
+
+.form-control {
+    position: relative;
+    margin-left:50px;
+    margin-top:40px;
+    margin-right:10px; 
+    width: 60%;
+}
+
+.form-control input {
+    color: green;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px green solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: green;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: green;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: green;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: green;
+    transform: translateY(-30px);
+}
+
+button {
+    
+    color: green;
+    font-weight: bold;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightgreen;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}
+
+img{
+    width:200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.dish-name{
+    text-align:center;
+}
+
+.country{
+    text-align: center;
+}
+
+.making{
+    padding-right:20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.band{
+    background-color: lightgreen;
+    padding-top:10px;
+    padding-bottom:2px;
+}
